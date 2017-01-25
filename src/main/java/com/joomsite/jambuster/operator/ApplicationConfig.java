@@ -3,12 +3,9 @@ package com.joomsite.jambuster.operator;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Profile;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.ui.freemarker.FreeMarkerConfigurationFactoryBean;
 import org.springframework.web.client.RestTemplate;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
 @Configuration
 public class ApplicationConfig {
@@ -19,6 +16,7 @@ public class ApplicationConfig {
 	@Value("${jdbc.password}") String jdbcPassword;
 	
 	public static void main(String[] args) {	
+//		 SpringApplication.run(ApplicationConfig.class, args);
 //        ConfigurableApplicationContext run = SpringApplication.run(ApplicationConfig.class, args);
 //        CustomerController bean = run.getBean(CustomerController.class);
 //        Customer customer = new Customer();
